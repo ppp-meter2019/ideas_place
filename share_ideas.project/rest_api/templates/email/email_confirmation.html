@@ -1,0 +1,8 @@
+{% autoescape off %}
+Hello!
+{{ user.username }} ! Please click the link to confirm your registration.
+http://{{ domain }}{% url 'ideas_place:user-activation' uidb64=uid token=token %}
+
+
+{% endautoescape %}
+
